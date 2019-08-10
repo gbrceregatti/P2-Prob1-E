@@ -1,7 +1,5 @@
 package problema1;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 /**
  *
  * @author heichstadt
@@ -9,26 +7,27 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class WmaPlay {
     
     public void setFile(String text){
-        
+        System.out.println("Selecionei o arquivo");
     }
     
     public void setLocation(int location){
-        
+        System.out.println("Selecionei o local");
     }
     
     public int getLocation(){
-        throw new NotImplementedException();
+        System.out.println("Local: 1");
+        return 1;
     }
     
     public void open(){
-        
+        System.out.println("Abri");
     }
     
     public void play(){
-        
+        System.out.println("Executei");
     }
     
     public void stop(){
-        
+        System.out.println("Parei");
     }
 }

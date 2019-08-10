@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package problema1;
 
 /**
@@ -13,24 +8,25 @@ public class AIFFPlayer {
 
     public AIFFPlayer(String nome) {
     }
-    
+
     public void play() {
-        
+        System.out.println("Executei");
     }
-    
+
     public void stop() {
-    
-    }   
-    
+        System.out.println("Parei");
+    }
+
     public int pause() {
-        return 0;
+        System.out.println("Retornei 1");
+        return 1;
     }
-    
+
     public void setCursor(int cursor) {
-    
+        System.out.println("Selecionei o cursor");
     }
-    
+
     public void release() {
-        
+        System.out.println("Lancei");
     }
 }
