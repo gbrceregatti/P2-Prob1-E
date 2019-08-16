@@ -1,4 +1,6 @@
-package problema1.etapa1;
+package problema1.etapa2;
+
+import problema1.etapa1.AudioFormat;
 
 public class AudioFacade {
 	AudioFormat este;
