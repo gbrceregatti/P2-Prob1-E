@@ -11,6 +11,9 @@ public class WmaPlay implements AudioFormat {
     public WmaPlay(String text) {
         
     }
+    
+    public WmaPlay() {}
+    
 
     public void setFile(String text){
         System.out.println("Selecionei o arquivo");

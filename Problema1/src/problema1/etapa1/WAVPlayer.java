@@ -1,14 +1,18 @@
 package problema1.etapa1;
 
 import problema1.etapa1.AudioFormat;
+import problema1.etapa2.Player;
 
 /**
  *
  * @author heichstadt
  */
-public class WAVPlayer implements AudioFormat {
+public class WAVPlayer extends Player implements AudioFormat {
 
     public WAVPlayer(String text) {
+    }
+    
+    public WAVPlayer() {
     }
 
     @Override
@@ -18,7 +22,7 @@ public class WAVPlayer implements AudioFormat {
 
     @Override
     public void run() {
-        System.out.println("Iniciei a reprodução do arquivo de audio");
+        System.out.println("Iniciei a reprodução do arquivo de audio ");
     }
 
     @Override

@@ -1,9 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package problema1;
+
+import problema1.etapa1.AudioFormat;
+import problema1.etapa1.WAVPlayer;
+import problema1.etapa2.Player;
+import problema1.etapa2.PlayerFactory;
 
 /**
  *
@@ -15,7 +15,10 @@ public class Problema1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+      
+        PlayerFactory teste = new PlayerFactory();
+        
+        AudioFormat player = teste.create("WAVPlayer");
+        player.open("skjad");
     }
-    
 }
