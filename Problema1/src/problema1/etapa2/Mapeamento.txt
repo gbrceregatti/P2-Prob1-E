@@ -1,0 +1,2 @@
+Padrao Factory >>>> Class PlayerFactory
+Padrao Façade >>>> Class AudioFacade
