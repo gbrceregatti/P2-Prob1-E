@@ -1,12 +1,35 @@
 package problema1.etapa2;
 import problema1.etapa1.AudioFormat;
 
-public class AACPlayer implements AudioFormat {
-    
+public class WmaPlay implements AudioFormat {
+
     private ConsoleAdapter console;
     
-    public AACPlayer(){
+    public WmaPlay(String text) {
         console = new ConsoleAdapter();
+    }
+    public WmaPlay() {
+        console = new ConsoleAdapter();
+    }
+    
+
+    public void setFile(String text){
+        console.writeLine("Selecionei o arquivo");
+    }
+    
+    public void setLocation(int location){
+        console.writeLine("Selecionei o local");
+    }
+    
+    public int getLocation(){
+        console.writeLine("Local: 1");
+        return 1;
+    }
+    
+    @Override
+    protected void finalize() throws Throwable {
+        console.writeLine("finalizei a instância da classe");
+        super.finalize();
     }
     
     @Override
@@ -31,28 +54,19 @@ public class AACPlayer implements AudioFormat {
 
     @Override
     public void forward(int milliseconds) {
-        console.writeLine("Recebei como parâmetro a quantidade de\n"
-                + "segundos que devem ser avançados no arquivo a partir do ponto\n"
-                + "atual");
+        console.writeLine("Recebei como parâmetro a quantidade de\n" +
+"segundos que devem ser avançados no arquivo a partir do ponto\n" +
+"atual");
     }
 
     @Override
     public void reward(int milliseconds) {
-        console.writeLine("recebe como parâmetro a quantidade de segundos que devem ser\n"
-                + "retrocedidos no arquivo a partir do ponto atual.");
+        console.writeLine("recebe como parâmetro a quantidade de segundos que devem ser\n" +
+"retrocedidos no arquivo a partir do ponto atual.");
     }
 
     @Override
     public void release() {
         console.writeLine("Fechei o arquivo de audio e liberei a memória");
-    }
-
-    public void setLocation(int location) {
-        console.writeLine("Selecionei o local");
-    }
-
-    public int getLocation() {
-        console.writeLine("Local: 1");
-        return 1;
     }
 }

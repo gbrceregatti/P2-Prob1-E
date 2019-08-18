@@ -1,18 +1,23 @@
 package problema1.etapa2;
-
 import problema1.etapa1.AudioFormat;
 
 public class AudioFacade {
-	AudioFormat este;
-	
-	public void reporduzirSimples(String arquivo) {
-		este.open(arquivo);
-	    este.run();
-	}
-	
-	public void pararSimples() {
-		este.stop();
-		este.release();
-	}
 
+    private AudioFormat audioFormat;
+    private PlayerFactory playerFactory;
+    
+    public AudioFacade(String type){
+        playerFactory = new PlayerFactory();
+        audioFormat = playerFactory.create(type);
+    }
+
+    public void reproduzirSimples(String arquivo) {
+        audioFormat.open(arquivo);
+        audioFormat.run();
+    }
+
+    public void pararSimples() {
+        audioFormat.stop();
+        audioFormat.release();
+    }
 }

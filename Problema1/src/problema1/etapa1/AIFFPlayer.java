@@ -18,7 +18,7 @@ public class AIFFPlayer implements AudioFormat {
     }
 
     @Override
-    public void open(String nome) {
+    public void open(String name) {
         System.out.println("Carreguei o arquivo de audio na memória");
     }
 
@@ -38,14 +38,14 @@ public class AIFFPlayer implements AudioFormat {
     }
 
     @Override
-    public void forward(int tempo) {
+    public void forward(int milliseconds) {
         System.out.println("Recebei como parâmetro a quantidade de\n"
                 + "segundos que devem ser avançados no arquivo a partir do ponto\n"
                 + "atual");
     }
 
     @Override
-    public void reward(int tempo) {
+    public void reward(int milliseconds) {
         System.out.println("recebe como parâmetro a quantidade de segundos que devem ser\n"
                 + "retrocedidos no arquivo a partir do ponto atual.");
     }

@@ -1,12 +1,8 @@
 package problema1.etapa1;
 
-/**
- *
- * @author User
- */
 public interface AudioFormat {
     
-    void open(String nome);
+    void open(String name);
     
     void run();
     
@@ -14,9 +10,9 @@ public interface AudioFormat {
     
     void stop();
     
-    void forward(int tempo);
+    void forward(int milliseconds);
     
-    void reward(int tempo);
+    void reward(int milliseconds);
     
     void release();
 }

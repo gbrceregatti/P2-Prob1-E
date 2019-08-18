@@ -1,2 +1,6 @@
 Padrao Factory >>>> Class PlayerFactory
+
 Padrao Façade >>>> Class AudioFacade
+
+Padrão Adapter => Class ConsoleAdapter
+    Utiliza a biblioteca padrão do java, Classe System, para adptar a implementação 'println' para o projeto.

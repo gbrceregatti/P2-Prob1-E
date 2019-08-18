@@ -1,14 +1,18 @@
 package problema1.etapa2;
 import problema1.etapa1.AudioFormat;
 
-public class AACPlayer implements AudioFormat {
-    
+public class WAVPlayer implements AudioFormat {
+
     private ConsoleAdapter console;
     
-    public AACPlayer(){
+    public WAVPlayer(String text) {
         console = new ConsoleAdapter();
     }
     
+    public WAVPlayer() {
+        console = new ConsoleAdapter();
+    }
+
     @Override
     public void open(String name) {
         console.writeLine("Carreguei o arquivo de audio na memória");
@@ -16,7 +20,7 @@ public class AACPlayer implements AudioFormat {
 
     @Override
     public void run() {
-        console.writeLine("Iniciei a reprodução do arquivo de audio");
+        console.writeLine("Iniciei a reprodução do arquivo de audio ");
     }
 
     @Override
@@ -45,14 +49,5 @@ public class AACPlayer implements AudioFormat {
     @Override
     public void release() {
         console.writeLine("Fechei o arquivo de audio e liberei a memória");
-    }
-
-    public void setLocation(int location) {
-        console.writeLine("Selecionei o local");
-    }
-
-    public int getLocation() {
-        console.writeLine("Local: 1");
-        return 1;
     }
 }
