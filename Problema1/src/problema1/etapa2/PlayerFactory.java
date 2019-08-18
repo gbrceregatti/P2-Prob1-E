@@ -1,7 +1,5 @@
 package problema1.etapa2;
 import problema1.etapa1.AudioFormat;
-import problema1.etapa1.WAVPlayer;
-import problema1.etapa1.WmaPlay;
 
 public class PlayerFactory implements AbstractFactory<AudioFormat>{
    
@@ -12,7 +10,7 @@ public class PlayerFactory implements AbstractFactory<AudioFormat>{
         if(type.equalsIgnoreCase("WmaPlay"))
             return new WmaPlay();
         if(type.equalsIgnoreCase("AIFFPlayer"))
-            return new WmaPlay();
+            return new AIFFPlayer();
         if(type.equalsIgnoreCase("AACPlayer"))
             return new AACPlayer();
         if(type.equalsIgnoreCase("MP3DJ"))

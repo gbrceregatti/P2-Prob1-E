@@ -10,6 +10,10 @@ public class AIFFPlayer implements AudioFormat {
         console = new ConsoleAdapter();
     }
 
+    public AIFFPlayer() {
+        console = new ConsoleAdapter();
+    }
+    
     public void setCursor(int cursor) {
         console = new ConsoleAdapter();
         this.cursor = cursor;
